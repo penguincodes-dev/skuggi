@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skuggi</title>
+    <!-- Jinja expression -->
+    <!-- The value of "title" can be inserted here -->
+</head>
+
+<body>
+    <h1>Skuggi</h1>
+
+    {% for post in posts %}
+    <!-- Jinja statement: loops through every post in "posts" -->
+
+        <article>
+            <h2>{{ post.title }}</h2>
+            <!-- Inserts the current post's title -->
+
+            <p>{{ post.content }}</p>
+            <!-- Inserts the current post's content -->
+        </article>
+
+    {% endfor %}
+    <!-- Ends the Jinja for loop -->
+
+</body>
+</html>
