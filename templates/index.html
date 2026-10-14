@@ -18,6 +18,7 @@
 
             <p>{{ post.content }}</p>
             <!-- Inserts the current post's content -->
+             <a href="{{ url_for('delete_post', post_id=post.id) }}">Delete</a>
         </article>
 
     {% endfor %}
